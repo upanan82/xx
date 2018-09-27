@@ -1,6 +1,6 @@
 # Blue Oyster OCR API
 
-This is a Express & ES6 REST API for Blue Oyster OCR.
+This is a Express and ES6 REST API for Blue Oyster OCR.
 
 - ES6 support via [babel](https://babeljs.io)
 - REST resources as middleware via [resource-router-middleware](https://github.com/developit/resource-router-middleware)
