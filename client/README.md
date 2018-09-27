@@ -1,10 +1,6 @@
 # Blue Oyster OCR Client
 
-This boilerplate launches with a [React web app](https://reactjs.org/) and [React Native app](https://facebook.github.io/react-native/) sharing a single code base. It shares the 'business logic' (_i.e. actions, containers, reducers_) across the platforms, whilst allowing flexibility in View components to ensure your project looks and feels native in each platform.
-
-The project is _super_ helpful to kick-start your next project, as it provides a lot of the common tools you may reach for, all ready to go. Specifically:
-
-This is a [React WEB app](https://reactjs.org/) and [React Native app](https://facebook.github.io/react-native/) client for Blue Oyster OCR.
+This is a [React WEB](https://reactjs.org/) and [React Native](https://facebook.github.io/react-native/) client for Blue Oyster OCR.
 
 - A shared React and React Native structure
 - __Flux architecture__
@@ -78,16 +74,3 @@ Via webpack, starts a localhost server on port 3001 [http://localhost:3001](http
 - Save code and it auto refreshes
 - Install [Redux DevTools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en) into Chrome to see the state of Redux
 
----
-
-## 👊 Further Help?
-
-This repo is a great place to start, but if you'd prefer to sit back and have your new project built for you, [get in touch with me directly](https://mcnam.ee) and I can organise a quote.
-
----
-
-## 💡 Inspiration
-
-- [This blog post](http://jkaufman.io/react-web-native-codesharing/) helped put the ideas into action
-
-_If there's any other ideas presented in this repo, that you think worth mentioning - feel free open a pull request :)_
