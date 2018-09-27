@@ -9,10 +9,7 @@ This is a Express and ES6 REST API for Blue Oyster OCR.
 
 > Tip: If you are using [Mongoose](https://github.com/Automattic/mongoose), you can automatically expose your Models as REST resources using [restful-mongoose](https://git.io/restful-mongoose).
 
-
-
-Getting Started
----------------
+## 🚀 Getting Started
 
 Development Node Version: `v8.11.3`
 
