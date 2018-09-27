@@ -25,29 +25,14 @@ Start production server:
 
     yarn start
 
-
-
-
-Build
----------------
+## Build
 
 Server build:
-```sh
-npm run build
 
-# Or with Yarn
-yarn build
-```
+    yarn build
 
-
-
-Testing
----------------
+## Testing
 
 Start testing with [ESLint](https://eslint.org/):
-```sh
-npm run test
 
-# Or with Yarn
-yarn test
-```
+    yarn test
