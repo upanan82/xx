@@ -11,7 +11,7 @@ This is a Express and ES6 REST API for Blue Oyster OCR.
 
 ## 🚀 Getting Started
 
-Development Node Version: `v8.11.3`
+The recommended Node version: `v8.11.3`
 
 Install dependencies:
 
