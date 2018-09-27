@@ -8,7 +8,6 @@ This is a [React WEB](https://reactjs.org/) and [React Native](https://facebook.
 - Data Caching / Offline with [Redux Persist](https://github.com/rt2zz/redux-persist)
 - UI Toolkit/s with [Native Base](https://nativebase.io/) for native mobile and [Bootstrap](https://getbootstrap.com/) for web
 - Simpler mobile app development through [Expo](https://expo.io/)
-- Code Linting with [Airbnb's JS Linting](https://github.com/airbnb/javascript) guidelines
 
 ## 🚀 Getting Started
 
@@ -18,6 +17,8 @@ Install dependencies:
 
     yarn i
 
+#### 1. Run the _WEB_ app
+
 Start development live-reload server for WEB:
 
     yarn web
@@ -25,6 +26,8 @@ Start development live-reload server for WEB:
 Start production server for WEB:
 
     yarn web-bundle
+
+#### 2. Run the _mobile_ App
 
 Start development live-reload server for native mobile:
 
