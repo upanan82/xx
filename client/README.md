@@ -3,11 +3,8 @@
 This is a [React WEB](https://reactjs.org/) and [React Native](https://facebook.github.io/react-native/) client for Blue Oyster OCR.
 
 - A shared React and React Native structure
-- __Flux architecture__
-    - [Redux](https://redux.js.org/docs/introduction/)
-- __Routing and navigation__
-    - [React Native Router Flux](https://github.com/aksonov/react-native-router-flux) for native mobile
-    - [React Router](https://github.com/ReactTraining/react-router) for web
+- Flux architecture with [Redux](https://redux.js.org/docs/introduction/)
+- Routing and navigation with [React Native Router Flux](https://github.com/aksonov/react-native-router-flux) for native mobile and [React Router](https://github.com/ReactTraining/react-router) for WEB
 - __Data Caching / Offline__
     - [Redux Persist](https://github.com/rt2zz/redux-persist)
 - __UI Toolkit/s__
