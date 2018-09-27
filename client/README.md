@@ -10,19 +10,6 @@ This is a [React WEB](https://reactjs.org/) and [React Native](https://facebook.
 - Simpler mobile app development through [Expo](https://expo.io/)
 - Code Linting with [Airbnb's JS Linting](https://github.com/airbnb/javascript) guidelines
 
----
-
-## 📖 Docs
-
-- [Setup your own Firebase](/docs/firebase.md)
-- [Understanding the file structure](/docs/file-structure.md)
-- [FAQs & Opinions](/docs/faqs.md)
-- [Testing, Deploying & Publishing](/docs/publishing.md)
-- [Tests & testing](/docs/testing.md) (coming soon...)
-- [Contributing to this project](/docs/contributing.md)
-
----
-
 ## 🚀 Getting Started
 
 #### 1. Clone and Install
