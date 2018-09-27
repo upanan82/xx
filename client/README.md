@@ -29,7 +29,7 @@ Start production server:
     
 Install [Redux DevTools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en) into Chrome to see the state of Redux.
 
-### Run the _mobile_ App (Expo app)
+### Run the _mobile_ App (Expo)
 
 Download the [Expo app](https://expo.io/) on your phone.
 Make sure your phone is in the same network as your computer.
@@ -50,4 +50,8 @@ With emulator for IOS:
 
     yarn ios
 
+## Testing
 
+Start testing with [Jest](https://jestjs.io/):
+
+    yarn test
