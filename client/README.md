@@ -19,17 +19,20 @@ Install dependencies:
 
 ### 1. Run the _WEB_ app
 
-Start development live-reload server for WEB:
+Start development live-reload server:
 
     yarn web
 
-Start production server for WEB:
+Start production server:
 
     yarn web-bundle
 
 ### 2. Run the _mobile_ App
 
-Start development live-reload server for native mobile:
+Download the [Expo](https://expo.io/) application on your phone.
+Make sure your phone is in the same network as your computer.
+
+Start development live-reload server:
 
     yarn start
 
