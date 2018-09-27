@@ -15,7 +15,7 @@ The recommended Node version: `v8.11.3`
 
 Install dependencies:
 
-    yarn i
+    yarn install
 
 ### Run the _WEB_ app
 
