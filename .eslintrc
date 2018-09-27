@@ -1,0 +1,25 @@
+{
+    "extends": "eslint:all",
+    "parserOptions": {
+        "ecmaVersion": 7,
+        "sourceType": "module"
+    },
+    "env": {
+		"node": true,
+		"browser": true
+    },
+    "rules": {
+        "no-console": "off",
+        "no-unreachable": "error",
+        "no-dupe-args": "error",
+        "no-duplicate-case": "warn",
+        "no-extra-parens": "error",
+        "no-extra-semi": "error",
+        "no-irregular-whitespace": "error",
+        "no-unused-vars": "warn",
+        "no-use-before-define": "error",
+        "no-empty": "warn",
+        "linebreak-style": 0,
+        "indent-size": [true, 2]
+    }
+}
