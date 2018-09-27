@@ -17,7 +17,7 @@ Install dependencies:
 
     yarn i
 
-#### 1. Run the _WEB_ app
+### 1. Run the _WEB_ app
 
 Start development live-reload server for WEB:
 
@@ -27,7 +27,7 @@ Start production server for WEB:
 
     yarn web-bundle
 
-#### 2. Run the _mobile_ App
+### 2. Run the _mobile_ App
 
 Start development live-reload server for native mobile:
 
