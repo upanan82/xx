@@ -1,4 +1,4 @@
-#Blue Oyster OCR API
+# Blue Oyster OCR API
 
 This is a Express & ES6 REST API for Blue Oyster OCR.
 
