@@ -12,6 +12,25 @@ This is a [React WEB](https://reactjs.org/) and [React Native](https://facebook.
 
 ## 🚀 Getting Started
 
+The recommended Node version: `v8.11.3`
+
+Install dependencies:
+
+    yarn i
+
+Start development live-reload server for WEB:
+
+    yarn web
+
+Start production server for WEB:
+
+    yarn web-bundle
+
+Start development live-reload server for native mobile:
+
+    yarn start
+
+
 #### 1. Clone and Install
 
 _*It's recommended that you install [React Native Debugger](https://github.com/jhen0409/react-native-debugger/releases) and open before `yarn start`._
