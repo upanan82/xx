@@ -26,6 +26,8 @@ Start development live-reload server:
 Start production server:
 
     yarn web-bundle
+    
+Install [Redux DevTools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en) into Chrome to see the state of Redux.
 
 ### 2. Run the _mobile_ App
 
