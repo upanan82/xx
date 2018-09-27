@@ -1,17 +1,10 @@
 # Blue Oyster OCR Client
 
-#### For when you're looking to build 'the next big thing' for both web and native mobile.
-
-<a href="http://react-boilerplate.mcnam.ee/"><img src="/docs/web-demo.jpg" alt="Web Demo" height="50" /></a>
-<a href="https://expo.io/@mcnamee/react-native-starter-kit"><img src="/docs/expo-demo.jpg" alt="React Native Expo Demo" height="50" /></a>
-
----
-
-## 👋 Intro
-
 This boilerplate launches with a [React web app](https://reactjs.org/) and [React Native app](https://facebook.github.io/react-native/) sharing a single code base. It shares the 'business logic' (_i.e. actions, containers, reducers_) across the platforms, whilst allowing flexibility in View components to ensure your project looks and feels native in each platform.
 
 The project is _super_ helpful to kick-start your next project, as it provides a lot of the common tools you may reach for, all ready to go. Specifically:
+
+This is a [React WEB app](https://reactjs.org/) and [React Native app](https://facebook.github.io/react-native/) client for Blue Oyster OCR.
 
 - A shared React and React Native structure
 - __Flux architecture__
