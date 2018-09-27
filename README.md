@@ -15,28 +15,16 @@ The recommended Node version: `v8.11.3`
 
 Install dependencies:
 
-    npm install
+    yarn i
 
 Start development live-reload server:
 
-    npm run dev
+    yarn dev
 
 Start production server:
 
-    npm start
+    yarn start
 
-You can also use the same commands with [Yarn](https://yarnpkg.com/en/):
-
-```sh
-# Dependencies
-yarn i
-
-# Development server
-yarn dev
-
-# Or production server
-yarn start
-```
 
 
 
