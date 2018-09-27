@@ -36,6 +36,7 @@ Start development live-reload server:
 
     yarn start
 
+Then follow the instructions from the console.
 
 #### 1. Clone and Install
 
