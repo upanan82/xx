@@ -55,3 +55,13 @@ With emulator for IOS:
 Start testing with [Jest](https://jestjs.io/):
 
     yarn test
+
+## Clear cache
+
+Clear cache with [Gulp](https://gulpjs.com/):
+
+    yarn clear-cache
+
+## Debug
+
+    yarn debug
