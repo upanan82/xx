@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {
-  Container, Content, Form, Item, Label, Input, Text, Button, View,
+  Container, Content, Form, Item, Label, Input, Text, Button, H1, H3, View,
 } from 'native-base';
 import { Actions } from 'react-native-router-flux';
 import Loading from './Loading';
@@ -32,8 +32,9 @@ class Login extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      email: (props.member && props.member.email) ? props.member.email : '',
+      email: '',
       password: '',
+      error: ''
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -43,14 +44,31 @@ class Login extends React.Component {
   handleChange = (name, val) => {
     this.setState({
       [name]: val,
+      error: ''
     });
   }
 
+  // handleSubmit = () => {
+  //   const { onFormSubmit } = this.props;
+  //   onFormSubmit(this.state)
+  //     .then(() => Actions.pop())
+  //     .catch(e => console.log(`Error: ${e}`));
+  // }
+
   handleSubmit = () => {
-    const { onFormSubmit } = this.props;
-    onFormSubmit(this.state)
-      .then(() => Actions.pop())
-      .catch(e => console.log(`Error: ${e}`));
+    if (this.state.email === 'test' && this.state.password === 'test') {
+      this.setState({
+        password: '',
+        email: ''
+      });
+      Actions.tabbar();
+    }
+    else {
+      const x = <Messages message="Invalid credentials" />;
+      this.setState({
+        error: x
+      });
+    }
   }
 
   render() {
@@ -60,31 +78,32 @@ class Login extends React.Component {
       success,
       locale,
     } = this.props;
-    const { email } = this.state;
+    const { email, password } = this.state;
 
     if (loading) return <Loading />;
 
     return (
-      <Container>
-        <Content>
+      <Container style={{}}>
+        <Content style={{paddingTop: '50%'}}>
           <View padder>
-            <Header
-              title="Welcome back"
-              content="Please use your email and password to login."
-            />
-            { success ? <Messages type="success" message={success} /> : null }
-            { error ? <Messages message={error} /> : null }
+            <H1 style={{textAlign: 'center', marginBottom: '5%'}}>
+              Blue Oyster
+            </H1>
+            {/* { success ? <Messages type="success" message={success} /> : null }
+            { error ? <Messages message={error} /> : null } */}
+            {this.state.error}
           </View>
 
           <Form>
             <Item stackedLabel>
               <Label>
-                {translate('Email', locale)}
+                {translate('Username', locale)}
+
               </Label>
               <Input
                 autoCapitalize="none"
                 value={email}
-                keyboardType="email-address"
+                // keyboardType="email-address"
                 onChangeText={v => this.handleChange('email', v)}
               />
             </Item>
@@ -94,6 +113,7 @@ class Login extends React.Component {
               </Label>
               <Input
                 secureTextEntry
+                value={password}
                 onChangeText={v => this.handleChange('password', v)}
               />
             </Item>

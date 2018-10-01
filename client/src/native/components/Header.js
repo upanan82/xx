@@ -7,13 +7,13 @@ import Spacer from './Spacer';
 const Header = ({ title, content }) => (
   <View>
     <Spacer size={25} />
-    <H1>
+    <H1 style={{textAlign: 'center'}}>
       {title}
     </H1>
     {!!content && (
       <View>
         <Spacer size={10} />
-        <Text>
+        <Text style={{textAlign: 'center'}}>
           {content}
         </Text>
       </View>

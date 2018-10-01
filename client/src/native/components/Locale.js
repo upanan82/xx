@@ -7,6 +7,7 @@ import { Actions } from 'react-native-router-flux';
 import Loading from './Loading';
 import Messages from './Messages';
 import Header from './Header';
+import { translate } from '../../i18n';
 
 import { Translations } from '../../i18n';
 
@@ -57,8 +58,8 @@ class Locale extends React.Component {
       <Container>
         <Content padder>
           <Header
-            title="Change language"
-            content=""
+            title={translate('cl', locale)}
+            content="Language will not change everywhere due to incomplete vocabulary."
           />
 
           {error && <Messages message={error} />}

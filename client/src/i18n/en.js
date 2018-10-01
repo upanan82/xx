@@ -1,5 +1,6 @@
 export default {
   Login: 'Login',
-  Email: 'Email',
+  Username: 'Username',
   Password: 'Password',
+  cl: 'Change language'
 };

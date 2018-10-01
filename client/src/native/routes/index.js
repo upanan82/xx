@@ -28,9 +28,17 @@ import MemberContainer from '../../containers/Member';
 import ProfileComponent from '../components/Profile';
 
 import AboutComponent from '../components/About';
+import CameraComponent from '../components/Camera';
 
 const Index = (
   <Stack hideNavBar>
+    <Scene
+      key="home11"
+      title="LOGIN"
+      {...DefaultProps.navbarProps}
+      component={LoginContainer}
+      Layout={LoginComponent}
+    />
     <Scene hideNavBar>
       <Tabs
         key="tabbar"
@@ -41,17 +49,26 @@ const Index = (
       >
         <Stack
           key="home"
-          title={AppConfig.appName.toUpperCase()}
-          icon={() => <Icon name="planet" {...DefaultProps.icons} />}
+          title="SEARCH"
+          icon={() => <Icon name="search" {...DefaultProps.icons} />}
           {...DefaultProps.navbarProps}
         >
-          <Scene key="home" component={AboutComponent} />
+          <Scene key="home" component={() => <AboutComponent />} />
+        </Stack>
+
+        <Stack
+          key="home1"
+          title="CAMERA"
+          icon={() => <Icon name="camera" {...DefaultProps.icons} />}
+          {...DefaultProps.navbarProps}
+        >
+          <Scene key="home1" component={() => <CameraComponent />} />
         </Stack>
 
         <Stack
           key="recipes"
-          title="RECIPES"
-          icon={() => <Icon name="book" {...DefaultProps.icons} />}
+          title="LOCATIONS"
+          icon={() => <Icon name="pin" {...DefaultProps.icons} />}
           {...DefaultProps.navbarProps}
         >
           <Scene key="recipes" component={RecipesContainer} Layout={RecipesComponent} />
@@ -111,8 +128,8 @@ const Index = (
     <Scene
       back
       clone
-      key="recipe"
-      title="RECIPE"
+      key="search"
+      title="CONTAINER"
       {...DefaultProps.navbarProps}
       component={RecipesContainer}
       Layout={RecipeViewComponent}

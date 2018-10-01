@@ -4,6 +4,7 @@ import { View } from 'react-native';
 import {
   Container, Content, List, ListItem, Body, Left, Text, Icon,
 } from 'native-base';
+import { Image } from 'react-native';
 import { Actions } from 'react-native-router-flux';
 import Header from './Header';
 
@@ -16,8 +17,8 @@ const Profile = ({ member, logout }) => (
             <View>
               <Content padder>
                 <Header
-                  title={`Hi ${member.firstName},`}
-                  content={`You are currently logged in as ${member.email}`}
+                  title={`Test`}
+                  content={`Admin`}
                 />
               </Content>
 
@@ -46,23 +47,34 @@ const Profile = ({ member, logout }) => (
           : (
             <View>
               <Content padder>
+              <Image
+                source={{ uri: 'https://static.thenounproject.com/png/630729-200.png' }}
+                style={{
+                  height: 120,
+                  width: 120,
+                  marginLeft: 'auto',
+                  marginRight: 'auto',
+                  borderRadius: 120,
+                  flex: 1
+                }}
+              />
                 <Header
-                  title="Hi there,"
-                  content="Please login to gain extra access"
+                  title="Test"
+                  content="(Admin)"
                 />
               </Content>
 
-              <ListItem onPress={Actions.login} icon>
+              <ListItem onPress={Actions.home11} icon>
                 <Left>
                   <Icon name="power" />
                 </Left>
                 <Body>
                   <Text>
-                    Login
+                    Logout
                   </Text>
                 </Body>
               </ListItem>
-              <ListItem onPress={Actions.signUp} icon>
+              {/* <ListItem onPress={Actions.signUp} icon>
                 <Left>
                   <Icon name="add-circle" />
                 </Left>
@@ -81,7 +93,7 @@ const Profile = ({ member, logout }) => (
                     Forgot Password
                   </Text>
                 </Body>
-              </ListItem>
+              </ListItem> */}
             </View>
           )
         }

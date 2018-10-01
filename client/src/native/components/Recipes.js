@@ -13,30 +13,27 @@ import Header from './Header';
 import Spacer from './Spacer';
 
 const RecipeListing = ({
-  error,
-  loading,
-  recipes,
-  reFetch,
+  
 }) => {
-  // Loading
-  if (loading) return <Loading />;
+  // // Loading
+  // if (loading) return <Loading />;
 
-  // Error
-  if (error) return <Error content={error} />;
+  // // Error
+  // if (error) return <Error content={error} />;
 
-  const keyExtractor = item => item.id;
+  // const keyExtractor = item => item.id;
 
-  const onPress = item => Actions.recipe({ match: { params: { id: String(item.id) } } });
+  // const onPress = item => Actions.recipe({ match: { params: { id: String(item.id) } } });
 
   return (
     <Container>
       <Content padder>
         <Header
-          title="Top Recipes"
-          content="This is here to show how you can read and display data from a data source (in our case, Firebase)."
+          title="Locations"
+          content="Please have a little patience, page in development!"
         />
 
-        <FlatList
+        {/* <FlatList
           numColumns={2}
           data={recipes}
           renderItem={({ item }) => (
@@ -83,7 +80,7 @@ const RecipeListing = ({
               onRefresh={reFetch}
             />
           )}
-        />
+        /> */}
 
         <Spacer size={20} />
       </Content>
@@ -92,15 +89,15 @@ const RecipeListing = ({
 };
 
 RecipeListing.propTypes = {
-  error: PropTypes.string,
-  loading: PropTypes.bool.isRequired,
-  recipes: PropTypes.arrayOf(PropTypes.shape()).isRequired,
-  reFetch: PropTypes.func,
+  // error: PropTypes.string,
+  // loading: PropTypes.bool.isRequired,
+  // recipes: PropTypes.arrayOf(PropTypes.shape()).isRequired,
+  // reFetch: PropTypes.func,
 };
 
 RecipeListing.defaultProps = {
-  error: null,
-  reFetch: null,
+  // error: null,
+  // reFetch: null,
 };
 
 export default RecipeListing;
